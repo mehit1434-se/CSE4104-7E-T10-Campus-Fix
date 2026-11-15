@@ -3,36 +3,44 @@
 ## Team Information
 - **Team Name:** CSE4104-7E-T10
 - **Section:** 7E
-- **Course:** CSE 4104 – Software Development III
-- **University:** Northern University of Business and Technology, Khulna
 - **Team Leader:** Mysha Rahaman Mehit (11230321434)
-- **Members:**
-  - Nafisha Binta Zorz Nishi (11230321340)
-  - Tahmid Ahmid Rafi (11230321358)
+- **Members:** Nafisha Binta Zorz Nishi (11230321340), Tahmid Ahmid Rafi (11230321358)
 
-## Project Description
-Campus Fix is a web-based platform that makes campus problem reporting
-organized and transparent. Students report issues such as damaged equipment,
-faulty lights or fans, water supply problems, and cleanliness concerns.
-Gemini AI categorizes and summarizes each report so campus personnel can
-review and update progress efficiently.
+## Objectives
+- Build a web platform where students can submit campus issue reports easily.
+- Use AI to automatically categorize complaints and generate short summaries.
+- Suggest a priority level (Low / Medium / High) for each complaint.
+- Detect similar or duplicate complaints to reduce repeated work.
+- Allow responsible personnel to review reports and update their progress.
+- Give students transparent status tracking of their submitted reports.
+- Provide administrators with a dashboard to monitor and analyze campus issues.
 
-## Proposed Features
-- Authentication (student, staff, admin)
-- Complaint submission with location and optional photo
-- AI-based categorization, summarization, and priority suggestion
-- Duplicate complaint detection
-- Status tracking (Pending, In Progress, Resolved)
-- Admin/staff dashboard with filters
-- Notifications
-- Issue statistics
+## Features
+- Authentication with student, staff and admin roles
+- Complaint submission (title, description, location, optional photo)
+- AI-based categorization and summarization (Gemini API)
+- AI-suggested priority and duplicate complaint detection
+- Complaint tracking: Pending, In Progress, Resolved
+- Admin / staff dashboard with filters
+- Notifications for status updates
+- Statistics (most common issues, average resolution time)
 
 ## Technology Stack
-- Frontend: React.js
-- Backend: Node.js + Express.js
-- Database: MongoDB
-- AI: Google Gemini API
-- Deployment: Vercel / Render
+| Layer | Technology |
+|---|---|
+| Frontend | React.js |
+| Backend | Node.js + Express.js |
+| Database | MongoDB (MongoDB Atlas) |
+| AI Integration | Google Gemini API |
+| Authentication | JWT |
+| Version Control | Git + GitHub |
+| Deployment | Vercel (frontend), Render (backend) |
 
-## Status
-Project planning phase (Week 2).
+## Repository Structure
+```
+campus-fix/
+├── client/        # React frontend
+├── server/        # Node.js + Express backend
+├── docs/          # Proposal, SRS and diagrams
+└── README.md
+```
